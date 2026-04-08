@@ -19,8 +19,8 @@ export default function ContactInfo() {
         </svg>
       ),
       title: 'Téléphone',
-      value: '+33 X XX XX XX XX',
-      link: 'tel:+33XXXXXXXXX',
+      value: '+33 6 17 53 60 03',
+      link: 'tel:+33617536003',
     },
     {
       icon: (

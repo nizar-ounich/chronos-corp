@@ -3,17 +3,7 @@
 import { useState } from 'react';
 
 export default function ContactForm() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    company: '',
-    service: '',
-    message: '',
-  });
-
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
   const services = [
     'Production audiovisuelle',
@@ -22,41 +12,16 @@ export default function ContactForm() {
     'Autre',
   ];
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitStatus('success');
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        company: '',
-        service: '',
-        message: '',
-      });
-
-      setTimeout(() => {
-        setSubmitStatus('idle');
-      }, 5000);
-    }, 1000);
-  };
-
   return (
     <div>
       <h2 className="text-3xl font-bold text-white mb-8">Envoyez-nous un message</h2>
       
-      <form onSubmit={handleSubmit} className="space-y-6">
+      <form action="https://formsubmit.co/contact@chronoscorp.fr" method="POST" className="space-y-6">
+        {/* FormSubmit.co Configuration */}
+        <input type="hidden" name="_subject" value="Nouveau message de contact - Chronos Corp" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="table" />
+        
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-white mb-2">
             Nom complet *
@@ -65,8 +30,6 @@ export default function ContactForm() {
             type="text"
             id="name"
             name="name"
-            value={formData.name}
-            onChange={handleChange}
             required
             className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:border-white/30 transition-colors"
             placeholder="Votre nom"
@@ -81,8 +44,6 @@ export default function ContactForm() {
             type="email"
             id="email"
             name="email"
-            value={formData.email}
-            onChange={handleChange}
             required
             className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:border-white/30 transition-colors"
             placeholder="votre@email.com"
@@ -97,10 +58,8 @@ export default function ContactForm() {
             type="tel"
             id="phone"
             name="phone"
-            value={formData.phone}
-            onChange={handleChange}
             className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:border-white/30 transition-colors"
-            placeholder="+33 X XX XX XX XX"
+            placeholder="+33 6 17 53 60 03"
           />
         </div>
 
@@ -112,8 +71,6 @@ export default function ContactForm() {
             type="text"
             id="company"
             name="company"
-            value={formData.company}
-            onChange={handleChange}
             className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:border-white/30 transition-colors"
             placeholder="Nom de votre entreprise"
           />
@@ -126,8 +83,6 @@ export default function ContactForm() {
           <select
             id="service"
             name="service"
-            value={formData.service}
-            onChange={handleChange}
             required
             className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white focus:outline-none focus:border-white/30 transition-colors"
           >
@@ -147,26 +102,12 @@ export default function ContactForm() {
           <textarea
             id="message"
             name="message"
-            value={formData.message}
-            onChange={handleChange}
             required
             rows={6}
             className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:border-white/30 transition-colors resize-none"
             placeholder="Parlez-nous de votre projet..."
           />
         </div>
-
-        {submitStatus === 'success' && (
-          <div className="p-4 bg-green-500/10 border border-green-500/20 rounded-lg text-green-400">
-            Merci ! Votre message a été envoyé avec succès. Nous vous répondrons dans les plus brefs délais.
-          </div>
-        )}
-
-        {submitStatus === 'error' && (
-          <div className="p-4 bg-red-500/10 border border-red-500/20 rounded-lg text-red-400">
-            Une erreur s'est produite. Veuillez réessayer.
-          </div>
-        )}
 
         <button
           type="submit"

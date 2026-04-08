@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 
 export default function Header() {
@@ -19,7 +20,7 @@ export default function Header() {
   return (
     <header className="relative bg-black">
       <nav className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-32">
           <div className="hidden md:flex items-center space-x-16 flex-1 justify-end pr-24">
             {leftNav.map((item) => (
               <Link
@@ -33,8 +34,15 @@ export default function Header() {
           </div>
 
           <div className="flex-shrink-0">
-            <Link href="/" className="text-white text-3xl font-bold tracking-[0.35em] hover:opacity-70 transition-opacity">
-              CHRONOS CORP.
+            <Link href="/" className="hover:opacity-70 transition-opacity">
+              <Image
+                src="/chronos-transparent-blanc.png"
+                alt="Chronos Corp"
+                width={600}
+                height={200}
+                priority
+                className="h-36 w-auto"
+              />
             </Link>
           </div>
 

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -20,8 +21,15 @@ export default function Footer() {
           </div>
 
           <div className="flex-shrink-0">
-            <Link href="/" className="text-white text-3xl font-bold tracking-[0.35em] hover:opacity-70 transition-opacity">
-              CHRONOS CORP.
+            <Link href="/" className="hover:opacity-70 transition-opacity">
+              <Image
+                src="/chronos-transparent-blanc.png"
+                alt="Chronos Corp"
+                width={600}
+                height={200}
+                priority
+                className="h-36 w-auto"
+              />
             </Link>
           </div>
 
