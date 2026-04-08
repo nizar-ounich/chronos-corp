@@ -2,12 +2,12 @@ import Link from 'next/link';
 
 export default function Expertise() {
   const categories = [
-    'MODE',
-    'BEAUTE',
-    'VOYAGE',
-    'HOTELLERIE',
-    'LUXE',
-    'RESTAURATION',
+    'COMMUNITY MANAGEMENT',
+    'PUBLICITÉ',
+    'DÉVELOPPEMENT WEB',
+    'GRAPHISME',
+    'MANAGEMENT DE TALENT',
+    'MODEL',
   ];
 
   return (
@@ -41,15 +41,15 @@ export default function Expertise() {
           <div className="space-y-12">
             <div className="text-right">
               <h2 className="text-6xl md:text-7xl font-light mb-2">02</h2>
-              <h3 className="text-3xl md:text-4xl font-bold tracking-tight mb-8">EXPERTISE</h3>
+              <h3 className="text-3xl md:text-4xl font-bold tracking-tight mb-8">SERVICES</h3>
             </div>
 
             <div className="space-y-6 text-white/80 text-base leading-relaxed">
               <p>
-                Nos stratégies innovantes d'influence digitale s'appuient sur notre étroite collaboration avec des créateurs de contenu du monde entier, notre réseau et notre expertise des réseaux sociaux.
+                Nous accompagnons les marques à chaque étape de leur développement digital. De la création audiovisuelle à la mise en ligne, nous concevons des dispositifs cohérents, pensés pour maximiser l'impact et la visibilité.
               </p>
               <p>
-                Nos clients bénéficient de cette expertise combinée à une réelle proximité des équipes pour concevoir et mettre en œuvre des stratégies créatives.
+                Grâce à une approche transversale et une collaboration étroite avec nos clients, nous construisons des stratégies sur mesure, alliant créativité, performance et maîtrise des outils digitaux.
               </p>
             </div>
 
@@ -57,20 +57,11 @@ export default function Expertise() {
               {categories.map((category, index) => (
                 <div
                   key={index}
-                  className="bg-[#1a2332] text-white px-6 py-3 text-center text-sm font-bold tracking-wider hover:bg-[#243447] transition-all duration-200"
+                  className="bg-white/5 text-white px-6 py-3 text-center text-sm font-bold tracking-wider hover:bg-white/10 transition-all duration-200"
                 >
                   {category}
                 </div>
               ))}
-            </div>
-
-            <div className="pt-6">
-              <Link
-                href="/services"
-                className="inline-block bg-[#1a2332] text-white px-8 py-3 rounded-md text-sm font-medium hover:bg-[#243447] transition-all duration-200"
-              >
-                EN SAVOIR +
-              </Link>
             </div>
           </div>
         </div>

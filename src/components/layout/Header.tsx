@@ -8,7 +8,7 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const leftNav = [
-    { name: 'EXPERTISE', href: '/services' },
+    { name: 'SERVICES', href: '/services' },
     { name: 'PROJETS', href: '/projets' },
   ];
 

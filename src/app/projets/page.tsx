@@ -1,5 +1,4 @@
 import ProjectsHero from '@/components/projets/ProjectsHero';
-import ProjectsFilter from '@/components/projets/ProjectsFilter';
 import ProjectsGrid from '@/components/projets/ProjectsGrid';
 
 export const metadata = {
@@ -11,7 +10,6 @@ export default function ProjetsPage() {
   return (
     <main className="bg-black">
       <ProjectsHero />
-      <ProjectsFilter />
       <ProjectsGrid />
     </main>
   );

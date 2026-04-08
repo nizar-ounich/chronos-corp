@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState, useEffect } from 'react';
+import { useRef, useEffect } from 'react';
 
 export default function Hero() {
   const videos = [
@@ -28,30 +28,17 @@ export default function Hero() {
 
 function VideoCard({ video }: { video: { id: number; src: string } }) {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
 
   useEffect(() => {
     if (videoRef.current) {
       videoRef.current.play().catch(() => {
         // Autoplay might be blocked, ignore error
       });
-      setIsPlaying(true);
     }
   }, []);
 
-  const togglePlay = () => {
-    if (videoRef.current) {
-      if (isPlaying) {
-        videoRef.current.pause();
-      } else {
-        videoRef.current.play();
-      }
-      setIsPlaying(!isPlaying);
-    }
-  };
-
   return (
-    <div className="relative w-full h-full bg-black group cursor-pointer" onClick={togglePlay}>
+    <div className="relative w-full h-full bg-black">
       <video
         ref={videoRef}
         className="absolute inset-0 w-full h-full object-cover"
@@ -63,20 +50,6 @@ function VideoCard({ video }: { video: { id: number; src: string } }) {
         <source src={video.src} type="video/mp4" />
         Votre navigateur ne supporte pas la lecture de vidéos.
       </video>
-      
-      {!isPlaying && (
-        <div className="absolute inset-0 flex items-center justify-center z-20">
-          <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center group-hover:bg-white/30 transition-all duration-300">
-            <svg
-              className="w-8 h-8 text-white ml-1"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path d="M8 5v14l11-7z" />
-            </svg>
-          </div>
-        </div>
-      )}
     </div>
   );
 }

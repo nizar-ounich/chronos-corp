@@ -27,13 +27,13 @@ export default function About() {
               <h3 className="text-3xl md:text-4xl font-bold tracking-tight mb-8">AGENCE</h3>
               <div className="space-y-6 text-white/80 text-base leading-relaxed">
                 <p>
-                  Chronos Corp, fondée par <span className="font-semibold">Nizar Ounich</span>, incarne une passion pour l'innovation digitale et l'influence, avec pour mission d'aider ses clients à prospérer dans un monde numérique en constante évolution.
+                  Chronos Corp accompagne marques et talents à travers la production audiovisuels, le management de profils et le développement digital, en offrant un accompagnement global allant de la création à la diffusion, pour construire une présence forte et cohérente dans un univers numérique en constante évolution.
                 </p>
               </div>
             </div>
 
             <div>
-              <h4 className="text-lg font-semibold mb-6">Nos 3 Pôles d'Excellence :</h4>
+              <h4 className="text-lg font-semibold mb-6">Nos trois domaines d’expertise :</h4>
               <ul className="space-y-6">
                 {services.map((service, index) => (
                   <li key={index} className="space-y-2">
@@ -44,15 +44,6 @@ export default function About() {
                   </li>
                 ))}
               </ul>
-            </div>
-
-            <div className="pt-6">
-              <Link
-                href="/about"
-                className="inline-block bg-[#1a2332] text-white px-8 py-3 rounded-md text-sm font-medium hover:bg-[#243447] transition-all duration-200"
-              >
-                QUI SOMMES-NOUS ?
-              </Link>
             </div>
           </div>
 

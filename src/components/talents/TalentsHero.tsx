@@ -4,7 +4,7 @@ export default function TalentsHero() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="max-w-4xl">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
-            Rejoignez notre réseau de talents
+            Rejoignez notre réseau de modèles et talents
           </h1>
           <p className="text-xl text-white/70 leading-relaxed mb-8">
             Nous accompagnons des créateurs de contenu, modèles et influenceurs dans le développement 

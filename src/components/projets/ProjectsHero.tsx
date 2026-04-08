@@ -8,7 +8,6 @@ export default function ProjectsHero() {
           </h1>
           <p className="text-xl text-white/70 leading-relaxed">
             Découvrez nos collaborations avec des marques prestigieuses et nos projets créatifs 
-            dans les domaines de la mode, beauté, voyage, hôtellerie, luxe et restauration.
           </p>
         </div>
       </div>
