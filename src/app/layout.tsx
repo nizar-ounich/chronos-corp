@@ -15,7 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Chronos Corp | Production, Digital et Talent",
+  metadataBase: new URL('https://chronos-corp.com'),
+  title: "Chronos Corp. | Production, Digital et Talent",
   description: "Contenu visuel, image de marque et management. Production audiovisuelle, management de talents et stratégies digitales.",
   icons: {
     icon: '/icon.png',
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
     apple: '/apple-icon.png',
   },
   openGraph: {
-    title: "Chronos Corp | Production, Digital et Talent",
+    title: "Chronos Corp. | Production, Digital et Talent",
     description: "Contenu visuel, image de marque et management.",
     images: ['/opengraph-image.png'],
     locale: 'fr_FR',
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Chronos Corp | Production, Digital et Talent",
+    title: "Chronos Corp. | Production, Digital et Talent",
     description: "Contenu visuel, image de marque et management.",
     images: ['/twitter-image.png'],
   },

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Expertise() {
   const categories = [
@@ -17,22 +18,34 @@ export default function Expertise() {
           {/* Left Column - Images */}
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-4">
-              <div className="aspect-[3/4] bg-white/5 rounded-lg overflow-hidden">
-                <div className="w-full h-full flex items-center justify-center text-white/20">
-                  Image 1
-                </div>
+              <div className="aspect-[3/4] bg-white/5 rounded-lg overflow-hidden relative">
+                <Image
+                  src="/about1.jpeg"
+                  alt="Expertise 1"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover"
+                />
               </div>
             </div>
             <div className="space-y-4">
-              <div className="aspect-square bg-white/5 rounded-lg overflow-hidden">
-                <div className="w-full h-full flex items-center justify-center text-white/20">
-                  Image 2
-                </div>
+              <div className="aspect-square bg-white/5 rounded-lg overflow-hidden relative">
+                <Image
+                  src="/about2.JPEG"
+                  alt="Expertise 2"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover"
+                />
               </div>
-              <div className="aspect-[4/3] bg-white/5 rounded-lg overflow-hidden">
-                <div className="w-full h-full flex items-center justify-center text-white/20">
-                  Image 3
-                </div>
+              <div className="aspect-[4/3] bg-white/5 rounded-lg overflow-hidden relative">
+                <Image
+                  src="/about3.jpeg"
+                  alt="Expertise 3"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover"
+                />
               </div>
             </div>
           </div>

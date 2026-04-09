@@ -37,7 +37,7 @@ export default function Header() {
             <Link href="/" className="hover:opacity-70 transition-opacity">
               <Image
                 src="/chronos-transparent-blanc.png"
-                alt="Chronos Corp"
+                alt="Chronos Corp."
                 width={600}
                 height={200}
                 priority

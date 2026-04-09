@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Projects() {
   const projects = [
@@ -20,7 +21,7 @@ export default function Projects() {
             </div>
             <div className="space-y-6 text-white/80 text-base leading-relaxed">
               <p>
-                Découvrez nos collaborations avec des marques prestigieuses dans les secteurs de la mode, beauté, luxe et lifestyle.
+                Nous collaborons avec des marques prestigieuses pour les accompagner dans la création de contenus vidéo sur mesure. À chaque étape du projet, nous cherchons à mettre en valeur leur identité et leurs produits, en alliant créativité et savoir-faire technique, du concept initial jusqu'à la livraison finale.
               </p>
             </div>
             <div className="pt-6">
@@ -36,21 +37,63 @@ export default function Projects() {
           {/* Right Column - Images */}
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-4">
-              <div className="aspect-[4/5] bg-white/5 rounded-lg overflow-hidden">
-                <div className="w-full h-full flex items-center justify-center text-white/20">
-                  Image 1
+              <div className="aspect-[4/5] bg-white/5 rounded-lg overflow-hidden relative">
+                <Image
+                  src="/projets1.jpg"
+                  alt="Projet 1"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 flex items-center justify-center z-20">
+                  <Image
+                    src="/client-logo/nb-logo.avif"
+                    alt="Client Logo"
+                    width={180}
+                    height={180}
+                    className="object-contain"
+                    style={{ width: 'auto', height: 'auto' }}
+                  />
                 </div>
               </div>
-              <div className="aspect-[4/3] bg-white/5 rounded-lg overflow-hidden">
-                <div className="w-full h-full flex items-center justify-center text-white/20">
-                  Image 2
+              <div className="aspect-[4/3] bg-white/5 rounded-lg overflow-hidden relative">
+                <Image
+                  src="/projets3.jpeg"
+                  alt="Projet 2"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 flex items-center justify-center z-20">
+                  <Image
+                    src="/client-logo/rd.png"
+                    alt="Client Logo"
+                    width={240}
+                    height={240}
+                    className="object-contain"
+                    style={{ width: 'auto', height: 'auto' }}
+                  />
                 </div>
               </div>
             </div>
             <div className="pt-12">
-              <div className="aspect-[3/4] bg-white/5 rounded-lg overflow-hidden">
-                <div className="w-full h-full flex items-center justify-center text-white/20">
-                  Image 3
+              <div className="aspect-[3/4] bg-white/5 rounded-lg overflow-hidden relative">
+                <Image
+                  src="/projets2.jpeg"
+                  alt="Projet 3"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 flex items-center justify-center z-20">
+                  <Image
+                    src="/client-logo/nike-logo.png"
+                    alt="Client Logo"
+                    width={180}
+                    height={180}
+                    className="object-contain"
+                    style={{ width: 'auto', height: 'auto' }}
+                  />
                 </div>
               </div>
             </div>

@@ -18,7 +18,7 @@ export default function ContactForm() {
       
       <form action="https://formsubmit.co/contact@chronoscorp.fr" method="POST" className="space-y-6">
         {/* FormSubmit.co Configuration */}
-        <input type="hidden" name="_subject" value="Nouveau message de contact - Chronos Corp" />
+        <input type="hidden" name="_subject" value="Nouveau message de contact - Chronos Corp." />
         <input type="hidden" name="_captcha" value="false" />
         <input type="hidden" name="_template" value="table" />
         

@@ -1,5 +1,7 @@
 import Link from 'next/link';
 
+import Image from 'next/image';
+
 export default function About() {
   const services = [
     {
@@ -24,10 +26,10 @@ export default function About() {
           <div className="space-y-12">
             <div>
               <h2 className="text-6xl md:text-7xl font-light mb-2">01</h2>
-              <h3 className="text-3xl md:text-4xl font-bold tracking-tight mb-8">AGENCE</h3>
+              <h3 className="text-3xl md:text-4xl font-bold tracking-tight mb-8">EXPERTISE</h3>
               <div className="space-y-6 text-white/80 text-base leading-relaxed">
                 <p>
-                  Chronos Corp accompagne marques et talents à travers la production audiovisuels, le management de profils et le développement digital, en offrant un accompagnement global allant de la création à la diffusion, pour construire une présence forte et cohérente dans un univers numérique en constante évolution.
+                  Chronos Corp. accompagne marques et talents à travers la production audiovisuels, le management de profils et le développement digital, en offrant un accompagnement global allant de la création à la diffusion, pour construire une présence forte et cohérente dans un univers numérique en constante évolution.
                 </p>
               </div>
             </div>

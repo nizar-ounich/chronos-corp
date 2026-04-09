@@ -5,33 +5,7 @@ export default function Footer() {
   return (
     <footer className="bg-black text-white border-t border-white/10">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-8">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="flex flex-col items-center md:items-start">
-            <p className="text-sm font-light mb-2">Un Projet ?</p>
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 bg-white text-black px-6 py-2 rounded-full text-sm font-medium hover:bg-white/90 transition-all duration-200"
-            >
-              CONTACT
-              <svg className="w-4 h-4" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
-                <path d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </Link>
-            <p className="text-xs font-light mt-2">Parlons-en !</p>
-          </div>
-
-          <div className="flex-shrink-0">
-            <Link href="/" className="hover:opacity-70 transition-opacity">
-              <Image
-                src="/chronos-transparent-blanc.png"
-                alt="Chronos Corp"
-                width={600}
-                height={200}
-                priority
-                className="h-36 w-auto"
-              />
-            </Link>
-          </div>
+        <div className="flex flex-col items-center gap-6">
 
           <div className="flex items-center gap-4">
             <a
@@ -63,7 +37,7 @@ export default function Footer() {
           <Link href="/mentions-legales" className="hover:opacity-70 transition-opacity">
             Mentions légales & politique de confidentialité
           </Link>
-          <p className="text-white/60">© {new Date().getFullYear()} by CHRONOS</p>
+          <p className="text-white/60">© {new Date().getFullYear()} by CHRONOS CORP.</p>
           <Link href="/cookies" className="hover:opacity-70 transition-opacity">
             Données personnelles & cookies
           </Link>

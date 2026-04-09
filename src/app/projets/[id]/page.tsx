@@ -78,12 +78,12 @@ export async function generateMetadata({ params }: { params: { id: string } }) {
   
   if (!project) {
     return {
-      title: 'Projet non trouvé - Chronos Corp',
+      title: 'Projet non trouvé - Chronos Corp.',
     };
   }
 
   return {
-    title: `${project.brand} - ${project.title} | Chronos Corp`,
+    title: `${project.brand} - ${project.title} | Chronos Corp.`,
     description: project.description,
   };
 }

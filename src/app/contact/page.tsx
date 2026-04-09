@@ -3,7 +3,7 @@ import ContactForm from '@/components/contact/ContactForm';
 import ContactInfo from '@/components/contact/ContactInfo';
 
 export const metadata = {
-  title: 'Contact - Chronos Corp',
+  title: 'Contact - Chronos Corp.',
   description: 'Contactez-nous pour discuter de votre projet. Notre équipe est prête à vous accompagner dans votre transformation digitale.',
 };
 
