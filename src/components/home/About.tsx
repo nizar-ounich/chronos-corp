@@ -25,9 +25,9 @@ export default function About() {
           {/* Left Column - Text Content */}
           <div className="space-y-12">
             <div>
-              <h2 className="text-6xl md:text-7xl font-light mb-2">01</h2>
-              <h3 className="text-3xl md:text-4xl font-bold tracking-tight mb-8">EXPERTISE</h3>
-              <div className="space-y-6 text-white/80 text-base leading-relaxed">
+              <h2 className="text-6xl md:text-7xl font-light mb-2 font-francy">01</h2>
+              <h3 className="text-3xl md:text-4xl font-bold tracking-tight mb-8 font-francy">EXPERTISE</h3>
+              <div className="space-y-6 text-white/80 text-base leading-relaxed font-francy">
                 <p>
                   Chronos Corp. accompagne marques et talents à travers la production audiovisuels, le management de profils et le développement digital, en offrant un accompagnement global allant de la création à la diffusion, pour construire une présence forte et cohérente dans un univers numérique en constante évolution.
                 </p>
@@ -35,12 +35,12 @@ export default function About() {
             </div>
 
             <div>
-              <h4 className="text-lg font-semibold mb-6">Nos trois domaines d’expertise :</h4>
+              <h4 className="text-lg font-semibold mb-6 font-francy">Nos trois domaines d’expertise :</h4>
               <ul className="space-y-6">
                 {services.map((service, index) => (
                   <li key={index} className="space-y-2">
-                    <h5 className="font-semibold text-white">{service.title}</h5>
-                    <p className="text-white/70 text-sm leading-relaxed">
+                    <h5 className="font-semibold text-white font-francy">{service.title}</h5>
+                    <p className="text-white/70 text-sm leading-relaxed font-francy">
                       {service.description}
                     </p>
                   </li>

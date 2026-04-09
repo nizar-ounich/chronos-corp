@@ -16,10 +16,10 @@ export default function Projects() {
           {/* Left Column - Title and Text */}
           <div className="space-y-8">
             <div>
-              <h2 className="text-6xl md:text-7xl font-light mb-2">03</h2>
-              <h3 className="text-3xl md:text-4xl font-bold tracking-tight mb-8">PROJETS</h3>
+              <h2 className="text-6xl md:text-7xl font-light mb-2 font-francy">03</h2>
+              <h3 className="text-3xl md:text-4xl font-bold tracking-tight mb-8 font-francy">PROJETS</h3>
             </div>
-            <div className="space-y-6 text-white/80 text-base leading-relaxed">
+            <div className="space-y-6 text-white/80 text-base leading-relaxed font-francy">
               <p>
                 Nous collaborons avec des marques prestigieuses pour les accompagner dans la création de contenus vidéo sur mesure. À chaque étape du projet, nous cherchons à mettre en valeur leur identité et leurs produits, en alliant créativité et savoir-faire technique, du concept initial jusqu'à la livraison finale.
               </p>
@@ -27,7 +27,7 @@ export default function Projects() {
             <div className="pt-6">
               <Link
                 href="/projets"
-                className="inline-block bg-white/5 text-white px-8 py-3 rounded-md text-sm font-medium hover:bg-white/10 transition-all duration-200"
+                className="inline-block bg-white/5 text-white px-8 py-3 rounded-md text-sm font-medium hover:bg-white/10 transition-all duration-200 font-francy"
               >
                 DÉCOUVRIR
               </Link>

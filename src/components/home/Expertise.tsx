@@ -53,11 +53,11 @@ export default function Expertise() {
           {/* Right Column - Content */}
           <div className="space-y-12">
             <div className="text-right">
-              <h2 className="text-6xl md:text-7xl font-light mb-2">02</h2>
-              <h3 className="text-3xl md:text-4xl font-bold tracking-tight mb-8">SERVICES</h3>
+              <h2 className="text-6xl md:text-7xl font-light mb-2 font-francy">02</h2>
+              <h3 className="text-3xl md:text-4xl font-bold tracking-tight mb-8 font-francy">SERVICES</h3>
             </div>
 
-            <div className="space-y-6 text-white/80 text-base leading-relaxed">
+            <div className="space-y-6 text-white/80 text-base leading-relaxed font-francy">
               <p>
                 Nous accompagnons les marques à chaque étape de leur développement digital. De la création audiovisuelle à la mise en ligne, nous concevons des dispositifs cohérents, pensés pour maximiser l'impact et la visibilité.
               </p>
@@ -70,7 +70,7 @@ export default function Expertise() {
               {categories.map((category, index) => (
                 <div
                   key={index}
-                  className="bg-white/5 text-white px-6 py-3 text-center text-sm font-bold tracking-wider hover:bg-white/10 transition-all duration-200"
+                  className="bg-white/5 text-white px-6 py-3 text-center text-sm font-bold tracking-wider hover:bg-white/10 transition-all duration-200 font-francy"
                 >
                   {category}
                 </div>

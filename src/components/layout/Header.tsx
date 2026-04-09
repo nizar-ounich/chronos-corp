@@ -26,7 +26,7 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-white text-base font-semibold tracking-[0.25em] hover:opacity-70 transition-opacity duration-300"
+                className="text-white text-base font-semibold tracking-[0.25em] hover:opacity-70 transition-opacity duration-300 font-francy"
               >
                 {item.name}
               </Link>
@@ -51,7 +51,7 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-white text-base font-semibold tracking-[0.25em] hover:opacity-70 transition-opacity duration-300"
+                className="text-white text-base font-semibold tracking-[0.25em] hover:opacity-70 transition-opacity duration-300 font-francy"
               >
                 {item.name}
               </Link>
@@ -88,7 +88,7 @@ export default function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-white text-sm font-light tracking-[0.15em] hover:opacity-70 transition-opacity"
+                  className="text-white text-sm font-light tracking-[0.15em] hover:opacity-70 transition-opacity font-francy"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}

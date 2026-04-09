@@ -22,6 +22,18 @@ export default function Hero() {
           <VideoCard key={video.id} video={video} />
         ))}
       </div>
+
+      {/* Dark Filter Overlay */}
+      <div className="absolute inset-0 bg-black/50 z-5"></div>
+
+      {/* Text Overlay */}
+      <div className="absolute inset-0 flex items-center justify-center z-10">
+        <div className="text-center px-6 lg:px-8">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[0.25em] mb-2 uppercase font-francy">
+            Talents, production et digital <br /> tout pour vos projets.
+          </h1>
+        </div>
+      </div>
     </section>
   );
 }
